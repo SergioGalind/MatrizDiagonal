@@ -17,7 +17,19 @@ public class Matriz {
                 matriz[i][j] =sc.nextInt();
             }
         }
-
+        // 3. Resolver e imprimir el resltado
+        int sumaDiagonalPrincipal =0;
+        for (int i = 0; i < filas; i++){
+            sumaDiagonalPrincipal += matriz[i][i];
+        }
+        //Imprime y ordena la matriz inicial
+        System.out.println("Matriz inicial: ");
+        for (int i =0; i<filas; i++){
+            for (int j=0; j<columnas;j++) {
+                System.out.print(matriz[i][j] + "  ");
+            }
+            System.out.println();
+        }
 
     }
 }
